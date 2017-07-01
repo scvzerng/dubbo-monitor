@@ -60,7 +60,7 @@ public class MyBatisConfig implements ApplicationContextAware {
         dataSource.setUsername(username);
         dataSource.setPassword(password);
         dataSource.setMaxActive(maxActive);
-
+        dataSource.setValidationQuery("SELECT 'x'");
         return dataSource;
     }
 
